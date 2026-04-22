@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayush Kumar Singh - Java Backend Developer Portfolio">
+    <title>Ayush Kumar Singh | Backend Engineer</title>
+    <!-- Modern premium fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Glowing Background Canvas -->
+    <div class="bg-canvas"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Ayush</span><span class="logo-dot">.</span><span class="logo-sub">dev</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- CTA inside mobile menu down below or here for desktop -->
+            </ul>
+            <div class="nav-actions">
+                <a href="Resume.pdf" download="Ayush_Kumar_Singh_Resume.pdf" class="btn btn-small outline-btn nav-resume">Resume</a>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <!-- Sun Icon (shows in dark mode) -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <!-- Moon Icon (shows in light mode) -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-padding">
+        <div class="hero-content fade-in">
+            <span class="greeting-badge">👋 Welcome to my portfolio</span>
+            <h1 class="name">
+                Architecting<br>
+                <span class="highlight-text gradient-text">Scalable Systems.</span>
+            </h1>
+            <h2 class="title">I'm Ayush Kumar Singh, a Backend Engineer.</h2>
+            <p class="summary">
+                I specialize in designing high-performance enterprise applications, robust REST APIs, and optimizing database infrastructure for massive scale.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn primary-btn glow-btn">View My Work</a>
+                <a href="Resume.pdf" download="Ayush_Kumar_Singh_Resume.pdf" class="btn outline-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download Resume
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">1.9+</span><span class="stat-label">Years Experience</span></div>
+                <div class="stat"><span class="stat-num">90%</span><span class="stat-label">API Perf Increase</span></div>
+            </div>
+        </div>
+        
+        <div class="hero-visual fade-in delay-1">
+            <div class="decorative-glow element-1"></div>
+            <div class="decorative-glow element-2"></div>
+            <div class="code-window glass-card floating">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="window-title">Ayush.java</span>
+                </div>
+                <pre><code><span class="keyword">@RestController</span>
+<span class="keyword">@RequestMapping</span>(<span class="string">"/api/v1/developer"</span>)
+<span class="keyword">public class</span> <span class="class-name">AyushController</span> {
+    
+    <span class="keyword">@Autowired</span>
+    <span class="keyword">private</span> BackendService service;
+
+    <span class="keyword">@GetMapping</span>(<span class="string">"/skills"</span>)
+    <span class="keyword">public</span> ResponseEntity&lt;List&lt;String&gt;&gt; <span class="method">getSkills</span>() {
+        <span class="keyword">return</span> ResponseEntity.ok(
+            List.of(<span class="string">"Java"</span>, <span class="string">"Spring Boot"</span>, <span class="string">"PostgreSQL"</span>)
+        );
+    }
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding relative">
+        <div class="section-badge fade-in">Who I Am</div>
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-grid fade-in delay-1">
+            <div class="about-text glass-card">
+                <p>
+                    As a Backend Engineer based in Kolkata, India, I thrive on solving complex architectural challenges. With nearly 2 years of experience building mission-critical services, I specialize in the Java ecosystem (Spring Boot, Hibernate, REST).
+                </p>
+                <p>
+                    Currently, I'm an Associate Software Engineer at Indus Net Technologies. My recent wins include partnering with Niva Bupa to deliver a production-ready insurance module and optimizing heavy Oracle DB queries to reduce API latency by an astonishing 70–90%.
+                </p>
+                <p>
+                    From implementing fallback mechanisms for third-party APIs to enforcing rigorous SonarQube quality gates, I write code that is clean, testable, and highly resilient.
+                </p>
+            </div>
+            <div class="about-highlights glass-card">
+                <h3>Core Focus</h3>
+                <ul class="highlight-list">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Microservices Architecture</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Database Query Optimization</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Seamless API Integrations</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero-downtime Deployments</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="section-badge fade-in">My Toolbelt</div>
+        <h2 class="section-title fade-in">Technical Skills</h2>
+        <div class="skills-grid fade-in delay-1">
+            <!-- Language Card -->
+            <div class="skill-card glass-card tech-card">
+                <div class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+                <h3>Languages & Databases</h3>
+                <div class="tag-cloud">
+                    <span class="premium-tag">Java 17</span>
+                    <span class="premium-tag">SQL</span>
+                    <span class="premium-tag">PostgreSQL</span>
+                    <span class="premium-tag">Oracle DB</span>
+                    <span class="premium-tag">MySQL</span>
+                </div>
+            </div>
+            <!-- Frameworks Card -->
+            <div class="skill-card glass-card tech-card">
+                <div class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+                <h3>Frameworks</h3>
+                <div class="tag-cloud">
+                    <span class="premium-tag">Spring Boot</span>
+                    <span class="premium-tag">Spring Security</span>
+                    <span class="premium-tag">Spring Data JPA</span>
+                    <span class="premium-tag">Hibernate</span>
+                    <span class="premium-tag">REST APIs</span>
+                </div>
+            </div>
+            <!-- Cloud & Tools Card -->
+            <div class="skill-card glass-card tech-card">
+                <div class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg></div>
+                <h3>Cloud & Tools</h3>
+                <div class="tag-cloud">
+                    <span class="premium-tag">AWS (EC2, S3, IAM)</span>
+                    <span class="premium-tag">Git & GitHub</span>
+                    <span class="premium-tag">Docker</span>
+                    <span class="premium-tag">JUnit 5</span>
+                    <span class="premium-tag">SonarQube</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-padding">
+        <div class="section-badge fade-in">Career Journey</div>
+        <h2 class="section-title fade-in">Professional Experience</h2>
+        <div class="timeline fade-in delay-1">
+            <div class="timeline-item">
+                <div class="timeline-dot glow"></div>
+                <div class="timeline-content glass-card hover-glow">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Associate Software Engineer - Java Backend</h3>
+                            <h4 class="company">Indus Net Technologies, Kolkata</h4>
+                        </div>
+                        <span class="duration">Jun 2024 – Present</span>
+                    </div>
+                    <ul class="experience-list modern-list">
+                        <li><strong>Insurance Modules:</strong> Delivered production-ready Self & Spouse Insurance Policy Module for SahajBeema platform in partnership with Niva Bupa.</li>
+                        <li><strong>Migration & Transactions:</strong> Developed complex Oracle migration queries for batch processing, ensuring high-volume transaction reliability and zero-downtime.</li>
+                        <li><strong>API Resilience:</strong> Implemented fallback mechanisms for third-party Bajaj and HDFC APIs, guaranteeing uninterrupted policy issuance during domain outages.</li>
+                        <li><strong>Performance Tuning:</strong> Optimized Oracle DB queries using SQL MERGE statements, slashing API latency by 70–90% and eliminating deadlocks.</li>
+                        <li><strong>Code Quality:</strong> Led SonarQube initiative, driving unit test coverage from 4% to 70% utilizing JUnit 5 and Mockito.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="section-badge fade-in">Portfolio</div>
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="project-grid fade-in delay-1">
+            <div class="project-card glass-card hover-glow">
+                <div class="project-header">
+                    <div class="project-title-area">
+                        <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <h3>Task Management Backend System</h3>
+                    </div>
+                    <a href="#" aria-label="GitHub Repository" class="project-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Java 17</span>
+                    <span class="tech-pill">Spring Boot 3</span>
+                    <span class="tech-pill">PostgreSQL</span>
+                    <span class="tech-pill">JWT</span>
+                </div>
+                <p class="project-desc">
+                    Architected a highly scalable backend orchestrating complex task assignment and state lifecycles. Secured with OAuth 2.0 and JWT, relying on Spring Data JPA and Postgres for highly concurrent relational state persistence.
+                </p>
+            </div>
+            
+            <!-- Additional filler project to make grid look nice -->
+            <div class="project-card glass-card hover-glow opacity-80">
+                <div class="project-header">
+                    <div class="project-title-area">
+                        <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <h3>Insurance Admin Portal API (Concept)</h3>
+                    </div>
+                </div>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">REST APIs</span>
+                    <span class="tech-pill">Role Based Access</span>
+                    <span class="tech-pill">SQL</span>
+                </div>
+                <p class="project-desc">
+                    Backend architecture for administrative dashboards generating daily/monthly operational reports. Engineered pagination, advanced filtering, and dynamic claim summaries. (Reference implementation based on live experience).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-padding fade-in">
+        <h2 class="section-title center-title">Education & Certifications</h2>
+        <div class="education-grid">
+            <div class="edu-card glass-card hover-glow">
+                <div class="edu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg></div>
+                <h3>B.Tech inside Computer Science & Engineering</h3>
+                <p class="edu-school">Adamas University, Kolkata | 2020 – 2024</p>
+                <div class="cgpa-badge">CGPA: 8.45 / 10.0</div>
+            </div>
+            <div class="cert-list glass-card hover-glow">
+                <div class="edu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div>
+                <h3>AWS Academy Graduate</h3>
+                <ul class="clean-list">
+                    <li>Cloud Foundations <span class="cert-date">Nov 2023</span></li>
+                    <li>Intro to Cloud Semester 1 <span class="cert-date">Oct 2023</span></li>
+                    <li>Intro to Cloud Semester 2 <span class="cert-date">Oct 2023</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer glass-panel">
+        <div class="footer-content">
+            <div class="footer-branding">
+                <p class="footer-logo">Ayush.dev</p>
+                <p class="footer-tagline">Building robust backend infrastructure.</p>
+            </div>
+            <div class="social-links large-socials">
+                <a href="#" aria-label="LinkedIn" class="social-glass">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="#" aria-label="GitHub" class="social-glass">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="mailto:ayush449g@gmail.com" aria-label="Email" class="social-glass">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2024 Ayush Kumar Singh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
