@@ -1150,8 +1150,7 @@ footer {
 .ps2d-root {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    height: 100dvh;
+    height: 500px;
     background: #070a0f;
     color: #fff;
     overflow: hidden;
@@ -1188,7 +1187,7 @@ footer {
 .ps2d-scene {
     position: relative;
     width: min(1240px, 96vw);
-    height: calc(100dvh - 100px);
+    height: 380px;
     margin: 80px auto 0 auto;
 }
 
