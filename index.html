@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Fira+Code:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="dark-mode">
+<body>
 
     <!-- Glowing Background Canvas -->
     <div class="bg-canvas"></div>
@@ -36,30 +37,7 @@
                 <!-- CTA inside mobile menu down below or here for desktop -->
             </ul>
             <div class="nav-actions">
-                <a href="Resume.pdf" download="Ayush_Kumar_Singh_Resume.pdf"
-                    class="btn btn-small outline-btn nav-resume">Resume</a>
-                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
-                    <!-- Sun Icon (shows in dark mode) -->
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <!-- Moon Icon (shows in light mode) -->
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
+                <a href="#contact" class="btn primary-btn glow-btn btn-small" style="border-radius: 50px;">Hire Me</a>
                 <div class="menu-toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -75,7 +53,7 @@
             <span class="greeting-badge">👋 Welcome to my portfolio</span>
             <h1 class="name">
                 Architecting<br>
-                <span class="highlight-text gradient-text">Scalable Systems.</span>
+                <span class="highlight-text gradient-text typing-text"></span><span class="cursor">|</span>
             </h1>
             <h2 class="title">I'm Ayush Kumar Singh, a Backend Engineer.</h2>
             <p class="summary">
@@ -151,84 +129,86 @@
                     gates, I write code that is clean, testable, and highly resilient.
                 </p>
             </div>
-            <div class="about-highlights glass-card">
-                <h3>Core Focus</h3>
-                <ul class="highlight-list">
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="var(--primary-color)" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg> Microservices Architecture</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="var(--primary-color)" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg> Database Query Optimization</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="var(--primary-color)" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg> Seamless API Integrations</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="var(--primary-color)" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg> Zero-downtime Deployments</li>
-                </ul>
+            <div class="about-profile glass-card">
+                <div class="profile-image-container">
+                    <img src="professional_avatar_1777027078587.png" alt="Ayush Kumar Singh" class="profile-img">
+                </div>
             </div>
+        </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section-padding">
-        <div class="section-badge fade-in">My Toolbelt</div>
-        <h2 class="section-title fade-in">Technical Skills</h2>
+    <!-- Skills Playground Section -->
+    <section id="skills" class="ps2d-root">
+        <header class="ps2d-header">
+            <h2 class="ps2d-title">Skills <span class="ps2d-accent">Playground</span></h2>
+            <p class="ps2d-sub">Drag, throw, and watch them bounce!</p>
+        </header>
+        <div class="ps2d-scene">
+            <div class="ps2d-floor-line"></div>
+        </div>
+    </section>
+
+    <!-- Technical Expertise Grid -->
+    <section class="skills-expertise section-padding">
+        <div class="section-badge fade-in">Expertise</div>
+        <h2 class="section-title fade-in">Technical <span class="gradient-text">Toolbelt</span></h2>
+
         <div class="skills-grid fade-in delay-1">
-            <!-- Language Card -->
-            <div class="skill-card glass-card tech-card">
-                <div class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polyline points="16 18 22 12 16 6"></polyline>
-                        <polyline points="8 6 2 12 8 18"></polyline>
-                    </svg></div>
-                <h3>Languages & Databases</h3>
-                <div class="tag-cloud">
-                    <span class="premium-tag">Java 17</span>
-                    <span class="premium-tag">SQL</span>
-                    <span class="premium-tag">PostgreSQL</span>
-                    <span class="premium-tag">Oracle DB</span>
-                    <span class="premium-tag">MySQL</span>
+            <!-- Backend -->
+            <div class="tech-card glass-card hover-glow">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 20h20M2 14h20M2 8h20M2 4h20" />
+                    </svg>
                 </div>
-            </div>
-            <!-- Frameworks Card -->
-            <div class="skill-card glass-card tech-card">
-                <div class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                        <polyline points="2 17 12 22 22 17"></polyline>
-                        <polyline points="2 12 12 17 22 12"></polyline>
-                    </svg></div>
-                <h3>Frameworks</h3>
+                <h3>Backend Development</h3>
                 <div class="tag-cloud">
-                    <span class="premium-tag">Spring Boot</span>
-                    <span class="premium-tag">Spring Security</span>
+                    <span class="premium-tag">Java 17+</span>
+                    <span class="premium-tag">Spring Boot 3</span>
                     <span class="premium-tag">Spring Data JPA</span>
                     <span class="premium-tag">Hibernate</span>
-                    <span class="premium-tag">REST APIs</span>
+                    <span class="premium-tag">RESTful APIs</span>
+                    <span class="premium-tag">Microservices</span>
                 </div>
             </div>
-            <!-- Cloud & Tools Card -->
-            <div class="skill-card glass-card tech-card">
-                <div class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-                    </svg></div>
-                <h3>Cloud & Tools</h3>
+
+            <!-- Database -->
+            <div class="tech-card glass-card hover-glow">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                    </svg>
+                </div>
+                <h3>Databases & Storage</h3>
                 <div class="tag-cloud">
-                    <span class="premium-tag">AWS (EC2, S3, IAM)</span>
-                    <span class="premium-tag">Git & GitHub</span>
+                    <span class="premium-tag">PostgreSQL</span>
+                    <span class="premium-tag">Oracle DB</span>
+                    <span class="premium-tag">Redis</span>
+                    <span class="premium-tag">SQL Optimization</span>
+                </div>
+            </div>
+
+            <!-- DevOps -->
+            <div class="tech-card glass-card hover-glow">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                </div>
+                <h3>Cloud & DevOps</h3>
+                <div class="tag-cloud">
+                    <span class="premium-tag">AWS Cloud</span>
                     <span class="premium-tag">Docker</span>
-                    <span class="premium-tag">JUnit 5</span>
+                    <span class="premium-tag">Git/GitHub</span>
                     <span class="premium-tag">SonarQube</span>
+                    <span class="premium-tag">JUnit 5</span>
+                    <span class="premium-tag">Mockito</span>
                 </div>
             </div>
         </div>
@@ -272,14 +252,11 @@
         <h2 class="section-title fade-in">Featured Projects</h2>
         <div class="project-grid fade-in delay-1">
             <div class="project-card glass-card hover-glow">
+                <div class="project-image">
+                    <img src="task_dashboard_mockup_1777028480087.png" alt="Task Management Mockup">
+                </div>
                 <div class="project-header">
                     <div class="project-title-area">
-                        <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                            </path>
-                        </svg>
                         <h3>Task Management Backend System</h3>
                     </div>
                     <a href="https://github.com/ayush45-code/full_stack_task_managemen_using_JWT-OAuth" target="_blank"
@@ -304,6 +281,63 @@
                     relational state persistence.
                 </p>
             </div>
+
+            <!-- Project 2: E-commerce Microservices -->
+            <div class="project-card glass-card hover-glow">
+                <div class="project-header">
+                    <div class="project-title-area">
+                        <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
+                        <h3>E-commerce Microservices Ecosystem</h3>
+                    </div>
+                    <a href="https://github.com/ayush45-code" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Spring Cloud</span>
+                    <span class="tech-pill">Kafka</span>
+                    <span class="tech-pill">Redis</span>
+                    <span class="tech-pill">Docker</span>
+                </div>
+                <p class="project-desc">
+                    Developed a distributed system featuring service discovery, API gateway, and event-driven
+                    communication using Kafka. Implemented Redis for session management and distributed caching,
+                    achieving sub-50ms response times for catalog lookups.
+                </p>
+            </div>
+
+            <!-- Project 3: Real-time Analytics -->
+            <!-- <div class="project-card glass-card hover-glow">
+                <div class="project-header">
+                    <div class="project-title-area">
+                        <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <h3>Real-time Metrics Pipeline</h3>
+                    </div>
+                    <a href="https://github.com/ayush45-code" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Spring WebFlux</span>
+                    <span class="tech-pill">WebSocket</span>
+                    <span class="tech-pill">PostgreSQL</span>
+                    <span class="tech-pill">Grafana</span>
+                </div>
+                <p class="project-desc">
+                    Engineered a reactive pipeline using WebFlux to stream live system metrics to a dashboard via WebSockets. Integrated with PostgreSQL for time-series data storage and implemented custom Prometheus exporters for granular monitoring.
+                </p>
+            </div> -->
         </div>
     </section>
 
@@ -318,7 +352,7 @@
                         <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                         <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                     </svg></div>
-                <h3>B.Tech inside Computer Science & Engineering</h3>
+                <h3>B.Tech in Computer Science &amp; Engineering</h3>
                 <p class="edu-school">Adamas University, Kolkata | 2020 – 2024</p>
                 <div class="cgpa-badge">CGPA: 8.45 / 10.0</div>
             </div>
@@ -339,15 +373,78 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding fade-in">
+        <div class="section-badge">Get In Touch</div>
+        <h2 class="section-title center-title">Contact Me</h2>
+        <p class="contact-intro">
+            I'm currently open to new opportunities. Whether you have a question, a project idea,
+            or just want to say hi — my inbox is always open!
+        </p>
+        <div class="contact-cards">
+            <a href="mailto:ayush449g@gmail.com" class="contact-card glass-card hover-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <div class="contact-card-info">
+                    <strong>Email</strong>
+                    <span>ayush449g@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ayush-singh45/" target="_blank" rel="noopener noreferrer"
+                class="contact-card glass-card hover-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <div class="contact-card-info">
+                    <strong>LinkedIn</strong>
+                    <span>Ayush Kumar Singh</span>
+                </div>
+            </a>
+            <a href="https://github.com/ayush45-code" target="_blank" rel="noopener noreferrer"
+                class="contact-card glass-card hover-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+                <div class="contact-card-info">
+                    <strong>GitHub</strong>
+                    <span>ayush45-code</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="contact-footer-cta">
+            <a href="Resume.pdf" download="Ayush_Kumar_Singh_Resume.pdf" class="btn outline-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download Resume
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer id="contact" class="footer glass-panel">
+    <footer class="glass-panel" style="border-radius:0; margin-top:0;">
         <div class="footer-content">
             <div class="footer-branding">
-                <p class="footer-logo">Ayush.dev</p>
+                <p class="footer-logo">Ayush<span style="color:var(--primary-color)">.</span>dev</p>
                 <p class="footer-tagline">Building robust backend infrastructure.</p>
             </div>
             <div class="social-links large-socials">
-                <a href="#" aria-label="LinkedIn" class="social-glass">
+                <a href="https://www.linkedin.com/in/ayush-singh45/" target="_blank" aria-label="LinkedIn"
+                    class="social-glass">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -355,7 +452,7 @@
                         <circle cx="4" cy="4" r="2"></circle>
                     </svg>
                 </a>
-                <a href="#" aria-label="GitHub" class="social-glass">
+                <a href="https://github.com/ayush45-code" target="_blank" aria-label="GitHub" class="social-glass">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -371,7 +468,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="copyright">&copy; 2024 Ayush Kumar Singh. All Rights Reserved.</p>
+            <p class="copyright">&copy; 2025 Ayush Kumar Singh. All Rights Reserved.</p>
         </div>
     </footer>
 
