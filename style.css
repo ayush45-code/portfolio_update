@@ -26,6 +26,20 @@
     --code-bg: #111111;
     --code-text: #00f2fe;
 
+    --selection-bg: rgba(0, 242, 254, 0.3);
+    --selection-text: #ffffff;
+    --scrollbar-thumb-bg: #27272a;
+    --scrollbar-thumb-hover: var(--primary-color);
+    --badge-bg: rgba(255, 255, 255, 0.03);
+    --btn-outline-hover-bg: rgba(255, 255, 255, 0.05);
+    --tech-icon-bg: rgba(0, 242, 254, 0.1);
+    --tech-pill-bg: rgba(0, 242, 254, 0.08);
+    --tech-pill-border: rgba(0, 242, 254, 0.2);
+    --shadow-primary: rgba(0, 242, 254, 0.2);
+    --shadow-heavy: rgba(0, 0, 0, 0.4);
+    --code-header-bg: #070a0f;
+    --footer-border-color: rgba(255, 255, 255, 0.1);
+
     --grid-pattern: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     --radial-glow: radial-gradient(circle at 10% 20%, rgba(0, 242, 254, 0.08), transparent 40%),
@@ -44,8 +58,23 @@
     --code-bg: #e0f2fe;
     --code-text: #0f172a;
     --primary-color: #0284c7;
-    --primary-glow: rgba(2, 132, 199, 0.3);
+    --primary-glow: #0284c74d;
     --accent-color: #7e22ce;
+
+    --selection-bg: rgba(14, 165, 233, 0.3);
+    --selection-text: #ffffff;
+    --scrollbar-thumb-bg: #cbd5e1;
+    --scrollbar-thumb-hover: var(--primary-color);
+    --badge-bg: rgba(14, 165, 233, 0.1);
+    --btn-outline-hover-bg: rgba(14, 165, 233, 0.1);
+    --tech-icon-bg: rgba(14, 165, 233, 0.15);
+    --tech-pill-bg: rgba(14, 165, 233, 0.1);
+    --tech-pill-border: rgba(14, 165, 233, 0.25);
+    --shadow-primary: rgba(14, 165, 233, 0.2);
+    --shadow-heavy: rgba(14, 165, 233, 0.1);
+    --code-header-bg: #e0f2fe;
+    --footer-border-color: rgba(14, 165, 233, 0.2);
+
     --grid-pattern: linear-gradient(rgba(14, 165, 233, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px);
     --radial-glow: radial-gradient(circle at 10% 20%, rgba(2, 132, 199, 0.15), transparent 40%), radial-gradient(circle at 90% 80%, rgba(126, 34, 206, 0.15), transparent 40%), radial-gradient(circle at 50% 50%, rgba(224, 242, 254, 0.8), transparent 70%);
 }
@@ -60,8 +89,8 @@
 
 /* Selection Color */
 ::selection {
-    background: rgba(0, 242, 254, 0.3);
-    color: #ffffff;
+    background: var(--selection-bg);
+    color: var(--selection-text);
 }
 
 /* Custom Scrollbar */
@@ -74,13 +103,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #27272a;
+    background: var(--scrollbar-thumb-bg);
     border-radius: 10px;
     border: 2px solid var(--bg-base);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-color);
+    background: var(--scrollbar-thumb-hover);
 }
 
 /* Reset & Scaffolding */
@@ -146,7 +175,7 @@ ul {
     display: inline-block;
     padding: 8px 16px;
     border-radius: 50px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--badge-bg);
     border: 1px solid var(--glass-border);
     color: var(--primary-color);
     font-size: 0.75rem;
@@ -197,7 +226,7 @@ ul {
 .hover-glow:hover {
     transform: translateY(-12px);
     border-color: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 242, 254, 0.1);
+    box-shadow: 0 20px 40px var(--shadow-heavy), 0 0 20px var(--shadow-primary);
 }
 
 /* Highly Stylized Buttons */
@@ -248,7 +277,7 @@ ul {
 
 .outline-btn:hover {
     border-color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--btn-outline-hover-bg);
 }
 
 /* Premium Navbar */
@@ -510,7 +539,7 @@ ul {
 }
 
 .window-header {
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--code-header-bg);
     padding: 14px 20px;
     display: flex;
     align-items: center;
@@ -700,7 +729,7 @@ ul {
 .icon-wrapper {
     width: 56px;
     height: 56px;
-    background: #01191a1a;
+    background: var(--tech-icon-bg);
     border-radius: 14px;
     display: flex;
     align-items: center;
@@ -878,11 +907,11 @@ ul {
     font-size: 0.8rem;
     font-weight: 600;
     font-family: var(--font-code);
-    color: #0811e7;
-    background: rgba(0, 242, 254, 0.08);
+    color: var(--tech-pill-text, #fdfdfd);
+    background: var(--tech-pill-bg);
     padding: 4px 10px;
     border-radius: 4px;
-    border: 1px solid rgba(0, 242, 254, 0.2);
+    border: 1px solid var(--tech-pill-border);
 }
 
 .project-desc {
@@ -920,7 +949,7 @@ ul {
     display: inline-block;
     padding: 8px 16px;
     background: rgba(0, 242, 254, 0.1);
-    color: var(--primary-color);
+    color: var(#f4fafb);
     font-weight: 700;
     border-radius: 8px;
     font-family: var(--font-code);
@@ -985,13 +1014,13 @@ ul {
 
 .contact-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
+    box-shadow: 0 0 30px var(--shadow-primary);
     color: var(--primary-color);
 }
 
 .contact-card svg {
     flex-shrink: 0;
-    color: var(--primary-color);
+    color: var(#f4fbfb);
 }
 
 .contact-card-info strong {
@@ -1082,11 +1111,10 @@ ul {
     resize: none;
 }
 
-/* Footer */
 footer {
     padding: 3rem 24px;
     margin-top: 2rem;
-    border-top: 1px solid var(--glass-border);
+    border-top: 1px solid var(--footer-border-color);
 }
 
 .footer-content {
