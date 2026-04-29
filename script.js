@@ -59,18 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!scene) return;
 
     const skills = [
-        { name: "Java 17",       color: "#e76f00" },
-        { name: "Spring Boot",   color: "#6db33f" },
-        { name: "PostgreSQL",    color: "#336791" },
-        { name: "Oracle DB",     color: "#f80000" },
-        { name: "Hibernate",     color: "#59666c" },
-        { name: "REST APIs",     color: "#00f2fe" },
-        { name: "Docker",        color: "#2496ed" },
-        { name: "AWS",           color: "#ff9900" },
-        { name: "Git",           color: "#f05032" },
-        { name: "JUnit 5",       color: "#25a162" },
+        { name: "Java 17", color: "#e76f00" },
+        { name: "Spring Boot", color: "#6db33f" },
+        { name: "PostgreSQL", color: "#336791" },
+        { name: "Oracle DB", color: "#f80000" },
+        { name: "Hibernate", color: "#59666c" },
+        { name: "REST APIs", color: "#00f2fe" },
+        { name: "Docker", color: "#2496ed" },
+        { name: "AWS", color: "#ff9900" },
+        { name: "Git", color: "#f05032" },
+        { name: "JUnit 5", color: "#25a162" },
         { name: "Microservices", color: "#a855f7" },
-        { name: "SonarQube",     color: "#4e9bcd" },
+        { name: "SonarQube", color: "#4e9bcd" },
     ];
 
     const TILE = 120, BOUNCE = 0.55, FRICTION = 0.985, GRAVITY = 0.45;

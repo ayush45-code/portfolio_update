@@ -109,7 +109,7 @@ ul {
 }
 
 .section-padding {
-    padding: 140px 24px;
+    padding: 60px 24px 100px 24px;
     max-width: var(--max-width);
     margin: 0 auto;
     position: relative;
@@ -366,7 +366,7 @@ ul {
 }
 
 .name {
-    font-size: clamp(3.5rem, 8vw, 6rem);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -392,8 +392,10 @@ ul {
 .summary {
     font-size: 1.15rem;
     color: var(--text-secondary);
-    max-width: 550px;
-    margin-bottom: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto 2.5rem auto;
+    text-align: left;
+    line-height: 1.8;
 }
 
 .hero-cta {
@@ -544,7 +546,7 @@ ul {
 /* About Grid */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 3rem;
     align-items: center;
 }
