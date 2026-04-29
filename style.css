@@ -87,6 +87,17 @@
     color: var(--text-primary);
 }
 
+.light-mode .navbar .primary-btn {
+    background: #deeaf0;
+    color: #0754a7;
+    border-color: #ffffff;
+}
+
+.light-mode .navbar .primary-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
 /* Selection Color */
 ::selection {
     background: var(--selection-bg);
@@ -821,7 +832,7 @@ ul {
 
 .company {
     font-size: 1.1rem;
-    color: var(--primary-color);
+    color: var(#2218e9);
     font-weight: 500;
 }
 
@@ -1005,7 +1016,6 @@ ul {
     align-items: center;
     gap: 1rem;
     text-decoration: none;
-    color: var(--text-primary);
     padding: 1.5rem 2rem;
     min-width: 220px;
     border-radius: 16px;
