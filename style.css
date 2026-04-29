@@ -837,13 +837,12 @@ ul {
 }
 
 .duration {
-    background: var(--glass-bg);
+    background: var(#1d69a9);
     border: 1px solid var(--glass-border);
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--text-secondary);
 }
 
 .modern-list {
