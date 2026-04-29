@@ -313,11 +313,11 @@ ul {
 }
 
 .logo-dot {
-    color: var(--primary-color);
+    color: var(#fafcfc);
 }
 
 .logo-sub {
-    color: var(--text-secondary);
+    color: var(#fafcfc);
     font-weight: 500;
     font-size: 1.3rem;
 }
