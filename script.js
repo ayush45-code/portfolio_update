@@ -1,3 +1,29 @@
+// =============================================
+// Resume Role Picker Modal
+// =============================================
+function openResumeModal() {
+    const overlay = document.getElementById('resume-modal-overlay');
+    if (overlay) {
+        overlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeResumeModal(e) {
+    // If called from overlay click, only close if clicking the backdrop itself
+    if (e && e.target !== e.currentTarget) return;
+    const overlay = document.getElementById('resume-modal-overlay');
+    if (overlay) {
+        overlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeResumeModal();
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggle
     const themeToggle = document.getElementById('theme-toggle');
